@@ -1,24 +1,33 @@
-const myVariable = "Mathematics";
+// Numbers
 
-console.log(myVariable.length);
+// An integer is a whole number
+const myNumber = 42;
 
-console.log(myVariable.charAt(0));
+/* A number with a decimal point is a float 
+which references the floating point */
 
-console.log(myVariable.indexOf("at"));
+const myFloat = 42.01;
 
-console.log(myVariable.lastIndexOf("at"));
+//Number Methods 
+/*The Number .isInteger() method determines whether the 
+passed value is an integer or not */
 
-console.log(myVariable.slice(5,2));
+console.log(Number.isInteger(myFloat));
 
-console.log(myVariable.toLocaleLowerCase(5,2));
+/* The number .parseFloat() method parses an argument and 
+returns a floating point number. If a number cannot be  parsed
+from the argument, it returns NaN.*/
 
-console.log(myVariable.toUpperCase(5,2));
+console.log(Number.parseFloat(myFloat));
 
-console.log(myVariable.includes("div")); //returns boolean values true or false
+/* The toFixed() method formats a number according to how 
+many decimal points you provide as the paramter. */
 
-console.log(myVariable.split("e")); // splits the string 
+console.log(myFloat.toFixed(2));
 
+//The .toString() method returns  a string  representing the number.
 
+console.log(myFloat.toString());
 
 
 
